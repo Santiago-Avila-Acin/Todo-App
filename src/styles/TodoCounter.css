@@ -1,0 +1,10 @@
+.task__container .todo__text{
+    font-size: var(--title);
+}
+
+.task__container .todo__compliment{
+    font-size: var(--lg);
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+

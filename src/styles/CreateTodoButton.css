@@ -1,0 +1,36 @@
+.task__container .modal__container{
+    display: none;
+
+}
+.task__container .modal__container .modal__button{
+    color: var(--light-color);
+    
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+.task__container .modal__container .modal__button:hover{
+    transform: rotate(224deg);
+    box-shadow: none;
+}
+
+@media (max-width: 800px){
+    .task__container .modal__container{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0px 28px 28px 0px;
+    }
+    
+    .task__container .modal__container .modal__button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--cyan);
+        font-size: 44px;
+        font-weight: 200px;
+        box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

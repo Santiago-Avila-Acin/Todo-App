@@ -1,0 +1,23 @@
+.card__container figure {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: end;
+    justify-items: center;
+    height: 100%;
+}
+
+.card__container figure img{
+    height: 200px;
+    width: 200px;
+}
+
+.card__container figure .heart{
+    display: flex;
+    flex-direction: row;
+}
+
+.card__container figure .heart img{
+    width: 68px;
+    height: 68px;
+    margin: 40px 20px 28px 20px;
+}

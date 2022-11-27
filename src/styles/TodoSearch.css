@@ -1,0 +1,33 @@
+.task__container .input__search{
+    width: 280px;
+    height: 28px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    border: none;
+    padding: 12px;
+    box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task__container .search__container img{
+    position: absolute;
+}
+
+.task__container .search__container img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    right: 32px;
+}
+
+@media (max-width: 800px){
+        .task__container .input__search{
+        width: 240px;
+    }
+}
+
+@media (max-width: 430px){
+        .task__container .input__search{
+        width: 220px;
+    }
+}

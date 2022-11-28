@@ -1,4 +1,5 @@
 .card__container figure {
+    margin-top: 24px;
     display: grid;
     grid-template-rows: 1fr auto;
     align-items: end;

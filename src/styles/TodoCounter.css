@@ -1,4 +1,4 @@
-.task__container .todo__text{
+.task__container .todo__text--main{
     font-size: var(--title);
 }
 

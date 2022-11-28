@@ -1,15 +1,30 @@
 import React from 'react'
+import { TodoContext } from '../hooks/TodoContext';
 import "../styles/CardNewTask.css"
 
 const CardNewTask = () => {
+    const {
+        newTodoValue,
+        onSubmit,
+        onChange,
+    } =React.useContext(TodoContext)
+
     return (
         <React.Fragment>
                 <h1>Create new task</h1>
-                <div class="new-task__container">
-                    <p>Task name</p>
-                    <input placeholder="New task" type="text" />
-                </div>
-            <button class="primary-button">Create task</button>
+                <form onSubmit={onSubmit} className="new-task__container">
+                    <label className="new-task__container">
+                        Task name
+                    </label>
+                        <input
+                        onChange={onChange}
+                        value={newTodoValue}
+                        placeholder="New task"
+                        type="text"
+                        />
+
+                    <button type='submit' className="primary-button">Create task</button>
+                </form>
         </React.Fragment>
     );
 }

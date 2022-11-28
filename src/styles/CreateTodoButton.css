@@ -7,6 +7,7 @@
     
     transform: rotate(0);
     transition: .3s ease;
+    z-index: 1;
 }
 
 .task__container .modal__container .modal__button:hover{

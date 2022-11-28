@@ -16,6 +16,7 @@
     font-weight: 500;
     box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
+    font-weight: bold;
 }
 
 .task__container .todo .todo__check{
@@ -28,9 +29,14 @@
     border: 1.9px solid var(--cyan);
 }
 
-.task__container .todo .todo__check:active{
+.task__container .todo .todo__check--completed{
     background-color: var(--cyan);
     border: 1px solid black;
+}
+
+.task__container .todo .todo__text--completed{
+    text-decoration: line-through;
+    font-weight: 400;
 }
 
 .task__container .todo .todo__close{
@@ -42,7 +48,7 @@
 }
 
 .task__container .todo .todo__close:hover{
-    color:rgb(237, 92, 92)
+    color:var(--red);
 }
 
 @media (max-width: 430px){

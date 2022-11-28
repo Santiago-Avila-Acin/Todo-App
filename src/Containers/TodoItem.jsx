@@ -1,13 +1,14 @@
 import React from 'react';
 import "../styles/TodoItem.css"
 
-const TodoItem = (props) => {
+const TodoItem = ({ onComplete, completed, text, deleteTodo}) => {
+
     return (
         <li>
             <div className="todo">
-                <div className="todo__check"></div>
-                <p>{props.text}</p>
-                <p className="todo__close">x</p>
+                <button onClick ={onComplete} className= {`todo__check ${completed && "todo__check--completed"}`}></button>
+                <p className= {` todo__text ${completed && "todo__text--completed"}`}>{text}</p>
+                <p onClick={deleteTodo} className="todo__close">x</p>
             </div>
         </li>
     );

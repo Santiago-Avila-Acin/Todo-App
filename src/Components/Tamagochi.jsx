@@ -7,7 +7,7 @@ const Tamagochi = () => {
     return (
         <figure>
             <img src= {tamagochiImage} alt="Tamagochi"/>
-            <div class="heart">
+            <div className="heart">
                 <img src= {heart} alt="Heart" />
                 <img src= {heart} alt="Heart" />
                 <img src= {heart} alt="Heart" />

@@ -10,7 +10,6 @@ import {TodoProvider} from "../hooks/TodoContext"
 
 function App() {
 
-
   return (
     <TodoProvider>
       <AppUi />

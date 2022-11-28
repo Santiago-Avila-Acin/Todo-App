@@ -87,11 +87,3 @@ const TodoProvider = (props) => {
 }
 
 export {TodoContext, TodoProvider};
-
-// totalTodos,
-// completedTodos,
-// searchValue,
-// setSearchValue,
-// searchedTodos,
-// toggleCompleteTodo,
-// deleteTodo,

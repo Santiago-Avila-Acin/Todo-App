@@ -4,7 +4,9 @@
 }
 .task__container .modal__container .modal__button{
     color: var(--light-color);
-    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     transform: rotate(0);
     transition: .3s ease;
     z-index: 1;
